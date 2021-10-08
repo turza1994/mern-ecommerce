@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg fixed-top navbar-light " style={{ height: '6vh', backgroundColor: 'transparent' }} >
+        <nav className="navbar navbar-expand-lg fixed-top navbar-light shadow-sm fw-bolder" style={{ height: '6vh', backgroundColor: '#fafafa' }} >
             <div className="container">
-                <Link className="navbar-brand text-primary fw-bolder fs-5 fst-italic" to="/">Turz</Link>
+                <Link className="navbar-brand text-primary fw-bolder fs-3 fst-italic" to="/">Turz</Link>
                 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -14,13 +14,13 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li className="nav-item mx-2">
-                            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                            <Link className="nav-link active text-secondary" aria-current="page" to="/">Home</Link>
                         </li>
                         <li className="nav-item mx-2">
-                            <Link className="nav-link active" aria-current="page" to="/">All Products</Link>
+                            <Link className="nav-link active text-secondary" aria-current="page" to="/">All Products</Link>
                         </li>
                         <li className="nav-item mx-2">
-                            <Link className="nav-link active" aria-current="page" to="/">Cart</Link>
+                            <Link className="nav-link active text-secondary" aria-current="page" to="/">Cart</Link>
                         </li>
                     </ul>
 
@@ -30,13 +30,13 @@ const Navbar = () => {
                     </form> */}
                     <ul className="navbar-nav mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link active" to="/"><i className="fas fa-search fs-6 mx-2 fst-italic"></i></Link>
+                            <Link className="nav-link active text-secondary" to="/"><i className="fas fa-search fs-6 mx-2 fst-italic"></i></Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" to="/"><i className="fas fa-shopping-cart fs-6 mx-2 fst-italic"></i></Link>
+                            <Link className="nav-link active text-secondary" to="/"><i className="fas fa-shopping-cart fs-6 mx-2 fst-italic"></i></Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" to="/"><i className="far fa-user fs-6 mx-2 fst-italic"></i></Link>
+                            <Link className="nav-link active text-secondary" to="/"><i className="far fa-user fs-6 mx-2 fst-italic"></i></Link>
                         </li>
                     </ul>
                 </div>
