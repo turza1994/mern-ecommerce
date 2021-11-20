@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg fixed-top navbar-light shadow-sm fw-bolder" style={{ height: '6vh', backgroundColor: '#fafafa' }} >
+        <nav className="navbar navbar-expand-lg fixed-top navbar-light shadow-sm fw-bolder" style={{ minHeight: '6vh', backgroundColor: '#fafafa' }} >
             <div className="container">
-                <Link className="navbar-brand text-primary fw-bolder fs-3 fst-italic" to="/">Turz</Link>
+                <Link className="navbar-brand text-primary fw-bolder fst-italic" to="/">Turz</Link>
                 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
