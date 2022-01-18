@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  max-height: 35vh;
 
   &.large {
     width: 48%;
@@ -47,7 +48,7 @@
     .title {
       font-weight: bold;
       margin: 0 6px 0;
-      font-size: 22px;
+      font-size: 19px;
       color: #4a4a4a;
     }
 
