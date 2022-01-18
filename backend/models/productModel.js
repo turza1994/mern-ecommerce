@@ -23,9 +23,9 @@ const reviewSchema = mongoose.Schema(
 
 const productSchema = mongoose.Schema(
     {
-        user: {
+        createdBy: {
             type: mongoose.Schema.Types.ObjectId,
-            // required: true,
+            required: true,
             ref: 'User'
         },
         name: {
@@ -35,7 +35,7 @@ const productSchema = mongoose.Schema(
         price: {
             type: Number,
             required: true,
-            default: 0
+            default: 100
         },
         image: {
             type: String,
@@ -55,7 +55,7 @@ const productSchema = mongoose.Schema(
         description: {
             type: String,
             required: true,
-            default: 'description'
+            default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra justo elit, at bibendum ex pretium at. Proin nisl dui, porta non odio ac, ullamcorper malesuada massa. Nullam lectus tellus, ornare et gravida at, convallis eget libero. Phasellus lobortis lacus eget orci tincidunt commodo id et dolor. In hac habitasse platea dictumst. Curabitur laoreet libero quam, vitae sollicitudin tortor vulputate at. Proin interdum arcu vel nisl molestie tincidunt. Morbi porttitor tellus neque, a vulputate justo consectetur sed. Nam ut enim quis tellus faucibus pulvinar. Curabitur cursus sollicitudin nunc, vitae tincidunt nisi placerat et. Quisque ante ex, blandit eu risus ut, imperdiet rhoncus ligula. Nullam tortor elit, porta vitae felis at, pretium vulputate arcu."
         },
         countInStock: {
             type: Number,
