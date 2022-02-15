@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import MenuItem from '../MenuItem/MenuItem';
-// import './MenuItems.scss'
 
 const MenuItems = () => {
   const [items] = useState([
@@ -34,8 +33,8 @@ const MenuItems = () => {
   ])
 
   return (
-    <div className="MenuItems container">
-        <div className="row">
+    <div className="MenuItems mt-1 container">
+        <div className="row justify-content-center align-items-center">
           {
             items.map(({ title, imageUrl, id, size }) => (
               <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />
