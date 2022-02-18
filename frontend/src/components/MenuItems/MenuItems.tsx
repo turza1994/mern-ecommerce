@@ -33,7 +33,7 @@ const MenuItems = () => {
   ])
 
   return (
-    <div className="MenuItems mt-1 container">
+    <div className="MenuItems mt-1 container mb-5">
         <div className="row justify-content-center align-items-center">
           {
             items.map(({ title, imageUrl, id, size }) => (
