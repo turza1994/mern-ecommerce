@@ -33,7 +33,6 @@ export const productReducer = (state = initialState, action: ProductAction) => {
               categories[cv.category] = cv.category
             }
         });
-        categories = Object.keys(categories);
 
         return {
           ...state,

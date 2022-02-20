@@ -1,10 +1,9 @@
-.CollectionPreview{
+.CollectionPreview {
+  padding: 20px;
 
-    padding: 20px;
-
-    .items{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }

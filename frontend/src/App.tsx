@@ -1,17 +1,18 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import './App.css';
+import './index.css';
 import Navbar from "./components/Navbar/Navbar";
 import HomePage from "./pages/HomePage/HomePage";
-import "./2.json"
 
 const App:React.FC = () => {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage/>} />
-      </Routes>
-    </Router>
+    <div className="font-link">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage/>} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
