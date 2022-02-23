@@ -6,7 +6,7 @@ export const getProducts = () => async(dispatch: any)=>{
         type: actionTypes.GET_PRODUCTS_PENDING
     })
     try{
-        const {data} = await axios.get('/products')
+        const {data} = await axios.get('/api/products')
         dispatch({
             type: actionTypes.GET_PRODUCTS_SUCCESS,
             payload: data
