@@ -1,3 +1,12 @@
 1. https://wokiee-demos.myshopify.com/
 2. https://new-ella-demo-11.myshopify.com/
 3. https://preview.themeforest.net/item/lusion-multipurpose-ecommerce-shopify-theme/full_screen_preview/30781124?_ga=2.178929133.837117581.1643881544-1496733414.1643881544
+
+
+"scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd frontend && npm install --only=dev && npm install && npm run build"
+  },
