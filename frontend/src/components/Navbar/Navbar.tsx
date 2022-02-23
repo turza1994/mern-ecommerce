@@ -40,7 +40,7 @@ const Navbar = () => {
                             <Link className="nav-link active text-black" aria-current="page" to="/">All Products</Link>
                         </li>
                         <li className="nav-item mx-2">
-                            <Link className="nav-link active text-black" aria-current="page" to="/">Cart</Link>
+                            <Link className="nav-link active text-black" aria-current="page" to="/cart">Cart</Link>
                         </li>
                     </ul>
 

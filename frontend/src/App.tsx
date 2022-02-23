@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './index.css';
 import Navbar from "./components/Navbar/Navbar";
 import HomePage from "./pages/HomePage/HomePage";
+import CartPage from "./pages/CartPage/CartPage";
 
 const App:React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const App:React.FC = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage/>} />
+          <Route path="/cart" element={<CartPage/>} />
         </Routes>
       </Router>
     </div>

@@ -1,10 +1,14 @@
+import { useDispatch } from "react-redux"
+import { addToCart } from "../../../redux/actionCreators/cartAction"
 import CustomButton from "../../Common/CustomButton/CustomButton"
 import "./CollectionItem.scss"
 
 const CollectionItem = ({item}: any)=>{
+    const dispatch = useDispatch()
 
     const addItem=(item: any)=>{
         console.log("clicked add to cart");
+        dispatch(addToCart(item))
     }
     
     return(
