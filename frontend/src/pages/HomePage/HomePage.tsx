@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import ShopPreview from '../../components/Home/ShopPreview/ShopPreview';
 import MenuItems from '../../components/MenuItems/MenuItems';
