@@ -28,10 +28,13 @@
   },
   "devDependencies": {
     "concurrently": "^6.5.1",
+    "mini-css-extract-plugin": "2.4.5",
     "nodemon": "^2.0.15"
   },
-
   "engines": {
     "node": "16.13.0"
+  },
+  "overrides": {
+    "mini-css-extract-plugin": "2.4.5"
   }
 }
