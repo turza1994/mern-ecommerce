@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "proxy": "https://turz-store.herokuapp.com/",
+  "proxy": "http://turz-store.herokuapp.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
