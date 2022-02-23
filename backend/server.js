@@ -1,6 +1,7 @@
 import path from 'path'
 import express from 'express'
 import dotenv from 'dotenv'
+import cors from 'cors'
 import connectDB from './config/db.js'
 import colors from 'colors'
 import authRoutes from './routes/authRoutes.js'
@@ -11,6 +12,7 @@ dotenv.config()
 connectDB()
 
 const app = express();
+app.use(cors())
 app.use(express.json())
 
 app.use('/api/users/auth', authRoutes)
