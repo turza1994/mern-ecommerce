@@ -1,0 +1,13 @@
+.Slider {
+  position: relative;
+  img {
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+  }
+  p {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+  }
+}
