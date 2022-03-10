@@ -1,9 +1,10 @@
 .Slider {
   position: relative;
   img {
-    background-size: contain;
     background-position: center;
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 55vh;
   }
   p {
     position: absolute;

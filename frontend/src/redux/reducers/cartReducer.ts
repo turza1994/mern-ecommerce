@@ -24,26 +24,27 @@ export const cartReducer = (state: any = initialState, action: any)=>{
                     ...state,
                     cartItems: {
                         ...state.cartItems,
-                        [action.payload._id]: {
-                            ...action.payload
+                        [item._id]: {
+                            ...item
                         }
                     }
                 }
 
             }else{
-                item.qty += state.cartItems[action.payload._id].qty
+                item.qty = state.cartItems[action.payload._id].qty + 1
                 item.totalPrice = item.price * item.qty
 
                 return {
                     ...state,
                     cartItems: {
                         ...state.cartItems,
-                        [action.payload._id]: {
-                            ...action.payload
+                        [item._id]: {
+                            ...item
                         }
                     }
                 }
             }
+            
             
         default:
             return state

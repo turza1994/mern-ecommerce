@@ -20,8 +20,8 @@ const Navbar = () => {
   
     return (
         <nav 
-            className="navbar navbar-expand-lg fixed-top fw-bolder" 
-            style={{  backgroundColor: `${navbar ? '#fafafa': 'transparent' }` }} 
+            className={`navbar navbar-expand-lg fixed-top fw-bolder ${navbar && 'shadow-sm' }`} 
+            style={{  backgroundColor: `${navbar ? '#fff': 'transparent' }` }} 
         >
             
             <div className="container">
