@@ -44,8 +44,33 @@ export const cartReducer = (state: any = initialState, action: any)=>{
                     }
                 }
             }
-            
-            
+        
+        case actionTypes.DECREASE_QUANTITY_FROM_CART: 
+            const item2 = action.payload
+            item2.qty = state.cartItems[item2._id].qty - 1
+            item2.totalPrice = item2.price * item2.qty
+
+            return {
+                ...state,
+                cartItems: {
+                    ...state.cartItems,
+                    [item2._id]: {
+                        ...item2
+                    }
+                }
+            }    
+
+            case actionTypes.REMOVE_FROM_CART:
+                const item3 = action.payload
+                delete state.cartItems[item3._id]
+                
+                return {
+                    ...state,
+                    cartItems: {
+                        ...state.cartItems
+                    }
+                }
+
         default:
             return state
     }
